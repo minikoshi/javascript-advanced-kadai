@@ -74,6 +74,7 @@ const timer = () => {
     count.textContent = time;
     if(time <= 0){
       clearInterval(id);
+      typedfield.textContent = '';
       untypedfield.textContent = 'タイムアップ！';
       setTimeout(() => {
         const result = confirm(rankCheck(score));
